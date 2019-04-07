@@ -52,20 +52,18 @@ def compute_statistics(parking_areas):
     total = len(parking_areas)
     true_counter = 0
     print("")
-    print("Comparison Results: ")
+    print("Results - Description of errors:")
     print("")
     for p_area in parking_areas:
         if compare(p_area.get_prediction(),p_area.get_occupancy()):
             true_counter += 1
-            #print("ParkingAreaId " + str(p_area.parking_area_id) + "result : true, prediction: " +
-            #p_area.get_discrete_prediction() + " , occupancy: " + str(p_area.get_occupancy()))
         else:
             print("ParkingAreaId " + str(p_area.parking_area_id) + " result: false, prediction: " +
             p_area.get_discrete_prediction() + ", occupancy: " + str(float("{0:.2f}".format(p_area.get_occupancy()))) + ", capacity: " + str(p_area.capacity))
 
     print("")
-    print("#total parking areas: " + str(total) + " | correct predictions [#]: " + str(true_counter) +
-    " | correct predictions [%]: " + str(float("{0:.2f}".format(float(true_counter)/float(total)))) + "%")
+    print("#total parking areas: " + str(total) + " | #correct predictions: " + str(true_counter) +
+    " | correct predictions [%]: " + str(float("{0:.2f}".format(100*float(true_counter)/float(total)))) + "%")
 
 
 
