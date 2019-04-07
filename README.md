@@ -1,4 +1,4 @@
-<img src="/images/aipark-berlin-benchmark.gif"  width="500">
+<p align="center"> <img src="/images/aipark-berlin-benchmark.gif"  width="600"> </p>
 
 # AIPARK-Benchmark-Berlin
 
