@@ -33,4 +33,4 @@ if __name__ == "__main__":
 ```
 python3 compare_predictions.py
 ```
-5. The script now imports the ground truth data from ground_truth.csv and fetches predictive parking data from the AIPARK API. Finally, the prediction metric as defined in <a href="https://medium.com/aipark/quality-at-scale-automating-quality-tests-for-map-data-to-solve-urban-parking-4e6194cbfef2">the blog post</a> gets applied and the results are printed out on the command line.
+5. The script now imports the ground truth data from ground_truth.csv and fetches predictive parking data from the AIPARK API. Finally, the prediction metric as defined in the <a href="https://medium.com/aipark/quality-at-scale-automating-quality-tests-for-map-data-to-solve-urban-parking-4e6194cbfef2">blog post</a> gets applied and the results are printed out on the command line.
