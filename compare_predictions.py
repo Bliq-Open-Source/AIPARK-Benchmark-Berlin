@@ -33,7 +33,6 @@ def parse(filename):
             timestamp = convert_timestring_to_unix(line[1])
             capacity = int(line[2])
             number_open_spots = int(line[3])
-
             data.append(ParkingArea(parking_area_id, timestamp, capacity, number_open_spots))
     return data
 
@@ -47,6 +46,7 @@ def request_predictions(parking_areas):
     for p_area in parking_areas:
         prediction = api.getOccupancyForParkingAreas([{"parkingAreaId": p_area.parking_area_id,"timestamp": p_area.timestamp}])
         p_area.set_prediction(prediction)
+        time.sleep(0.1)
 
 def compute_statistics(parking_areas):
     total = len(parking_areas)

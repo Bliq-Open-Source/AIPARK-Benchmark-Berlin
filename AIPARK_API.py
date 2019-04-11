@@ -44,5 +44,3 @@ class AIPARK_API(object):
 
 if __name__ == "__main__":
     api = AIPARK_API(apikey="insert-your-api-key-here")
-    resp = api.getOccupancyForParkingAreas([{"parkingAreaId": 5905659,"timestamp": 1552485541000}])
-    print(resp)

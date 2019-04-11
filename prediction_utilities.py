@@ -10,9 +10,9 @@ def discretize_prediction(prediction):
     if inRange(prediction,0,34):
         return "low"
     elif inRange(prediction,34,67):
-        return "high"
+        return "intermediate"
     elif inRange(prediction,67,100):
-        return "very high"
+        return "high"
     else:
         raise ValueError("Input value " + str(prediction) + " out of range.")
 
@@ -32,9 +32,9 @@ def compare(prediction, actual_value):
     d = discretize_prediction(prediction)
     if inRange(actual_value,0,1/3) and d is "low":
         return True
-    elif inRange(actual_value,1/3,2/3) and d is "high":
+    elif inRange(actual_value,1/3,2/3) and d is "intermediate":
         return True
-    elif inRange(actual_value,2/3,1) and d is "very_high":
+    elif inRange(actual_value,2/3,1) and d is "high":
         return True
     else:
         return False
