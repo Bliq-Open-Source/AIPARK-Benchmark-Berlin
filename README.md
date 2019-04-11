@@ -2,7 +2,7 @@
 
 # AIPARK-Benchmark-Berlin
 
-This repository contains the code and data required to reproduce the results from the article on Medium on the Benchmark of AIPARK Predictive Parking Data in Berlin. You can find the article here [LINK].
+This repository contains the code and data required to reproduce the results from the article on Medium on the Benchmark of AIPARK Predictive Parking Data in Berlin. You can find the article <a href="https://medium.com/aipark/quality-at-scale-automating-quality-tests-for-map-data-to-solve-urban-parking-4e6194cbfef2">here</a>: .
 
 # Requirements
 In order to be able to run the project, you need to have Python 3.6 installed.
